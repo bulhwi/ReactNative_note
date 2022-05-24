@@ -1,15 +1,12 @@
 import React from 'react';
 import {SafeAreaView} from 'react-native';
-import Greeting from './components/Greeting';
+import Box from './components/Box';
 
 const App = () => {
-  const name = 'props';
   return (
     <SafeAreaView>
-      <Greeting name={name} />
-      <Greeting name={`${name}2`} />
-      <Greeting name={`${name}3`} />
-      <Greeting />
+      <Box rounded />
+      <Box />
     </SafeAreaView>
   );
 };
