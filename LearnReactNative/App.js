@@ -3,11 +3,12 @@ import {SafeAreaView} from 'react-native';
 import Greeting from './components/Greeting';
 
 const App = () => {
+  const name = 'props';
   return (
     <SafeAreaView>
-      <Greeting name="Props" />
-      <Greeting name="Props2" />
-      <Greeting name="Props3" />
+      <Greeting name={name} />
+      <Greeting name={`${name}2`} />
+      <Greeting name={`${name}3`} />
       <Greeting />
     </SafeAreaView>
   );
